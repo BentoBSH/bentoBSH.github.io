@@ -1,0 +1,37 @@
+@media(max-width: 750px){
+    body {
+        background-repeat:repeat-y;
+    }
+
+    .main {
+        display:grid;
+    }
+    .cartoes {
+        display: flex;
+    } 
+    .lista {
+        display: grid;
+        height: 40px;
+        grid-template-columns: 30px 30px 30px;
+        margin-top: -450px
+    }
+    .magos{
+        display: flex;
+        gap: 5px;
+        padding: 20px 10px 10px 10px;
+        margin-bottom: 15px;
+        border: 10px 10px 10px 20px;
+        font-size: large;
+        max-height: 80px;
+        max-width: 50px;
+        min-width: 190px;
+        background-color: #c5c5c5;
+        border-radius: 50px 50px 50px 50px;
+        cursor: pointer;
+        transition: 0.15 ease-in-out;
+    }
+    .ativo {
+        background-color: #4c5e69;
+        color: white;
+    }
+}

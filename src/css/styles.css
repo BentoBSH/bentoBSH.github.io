@@ -1,0 +1,143 @@
+body {
+    background-image: url(../img/Harry-Potter-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+.main {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.cartoes-e-lista {
+    margin-top: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.lista {
+    margin-top: 0px;
+    margin-right: 80px; 
+    max-width: 230px;
+}
+
+.cartao {
+    max-width:280px; 
+    max-height: 700px;
+}
+.cartao-descricao {
+    background-color: white;
+}
+.topo {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 30px 20px 30px;
+    margin: 30px 20px 30px;
+    width: 300px;
+    height: 350px;
+}
+.texto-topo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.casa {
+    background-color: white;
+    width:30%;
+    height: 30%;
+    font-size: 15px;
+    opacity: 0.7;
+    padding: 2px 2px 2px 7px;
+    border-radius: 30px;
+}
+
+.cartao-descricao {
+    padding: 80px 20px 30px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: -140px 20px 30px;
+}
+.descricao {
+    max-width: fit-content;
+    max-height: 140px;
+    overflow-y: scroll;
+}
+.Harry {
+    background-color: #094367;
+} 
+.Hermione {
+    background-color: #ad448e;
+} 
+.Rubeo {
+    background-color: #854109;
+} 
+.Sirius {
+    background-color: #598f3a;
+} 
+.Severus {
+    background-color: #566b79;
+} 
+.Dumbledor {
+    background-color: #c7824a;
+} 
+
+.imagem {
+    display:flex;
+    justify-content: center;
+} 
+.imagem img{
+    width: 150px;
+    height: 100%;
+    margin-top: 10px;
+} 
+.magos {
+    display: flex;
+    gap: 30px;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 15px;
+    font-size: large;
+    max-height: 80px;
+    max-width: 400px;
+    min-width: 250px;
+    background-color: #c5c5c5;
+    border-radius: 50px 0px 0px 50px;
+    cursor: pointer;
+    transition: 0.15 ease-in-out;
+}
+.ativo {
+    background-color: #4c5e69;
+    color: white;
+}
+
+.magos img {
+    width: 50px;
+    height: 50px;
+    padding-left: 13px;
+    margin-top: -15px;
+}
+
+.ativo .miniatura {
+    background-color: white;
+    margin-left: 5px;
+    margin-top: -5px;
+    border-bottom: 90px;
+    min-height: 55px;
+    max-width: 40px;
+    border-radius: 15px;
+    img{
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+}
