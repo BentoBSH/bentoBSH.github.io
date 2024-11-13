@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="PT-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/churrascometro.css">
+    <link rel="stylesheet" href="/public/css/home.css">
+    <title>Churrascômetro</title>
+</head>
+<body>
+    <header>
+        <div id="logoEnome"><a href="/index.html"><img src="/public/img/Logo-BH1.png" alt="Logotipo BH"></a><h2><a href="/index.html">Bento Henriques</a></h2></div>
+        <div class="menu-geral" id="menu"><ul><li><a href="#">sobre</a></li><li><div onmouseenter="menuHover1()" ><a href="#portfolio">Projetos</a></div></li><li><a href="./contacto.html">Contacto</a></li></ul></div>
+    </header>
+
+    <div class="main-div" id="main">
+        <h1>Churrascômetro</h1>
+        <input type="number" id="adultos" name="adultos" placeholder="Quantidade de Adultos">
+        <input type="number" id="criancas" name="criancas" placeholder="Quantidade de Crianças">
+        <input type="number" id="duracao" name="duracao" placeholder="Duração do evento (horas)">
+        <button id="calcular">Calcular</button>
+        <div class="resultado" id="result">
+        </div>
+    </div>
+    <script src="./src/script/crurrascometro.js"></script>
+</body>
+</html>
