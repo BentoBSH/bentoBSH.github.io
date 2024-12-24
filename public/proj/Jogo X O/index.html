@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jogo X O</title>
+  <link rel="stylesheet" href="../../../public/css/home.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <header>
+    <div id="logo">
+        <a href="/index.html">
+            <img src="../../img/Logo-BH1.png" alt="Logotipo BH">
+        </a>
+    </div>
+    <div id="nomeHeader">
+        <h2 id="nomeBSH">
+            <a href="/index.html">Bento Henriques</a>
+        </h2>
+    </div>
+    <div class="menu-geral" id="menu">
+      <ul>
+        <li>
+            <a href="/index.html">sobre</a>
+        </li>
+        <li>
+            <a href="/index.html">Projetos</a>
+        </li>
+        <li>
+            <a href="/index.html">Contacto</a>
+        </li>
+    </ul>
+    </div>
+</header>
+    <br><h1>Jogo X O</h1>
+
+    <div class="vencedor">
+      <h3 id="vencedorId"></h3>
+    </div>
+
+
+
+
+    <div class="nomes" id="nomes">
+      <div class="player">
+         <h3>Jogador 1 (X)</h3>
+         <input type="text" name="nome" placeholder="Coloque o seu nome aqui" id="j1" autofocus required> 
+      </div>
+      <div class="player2">
+         <h3>Jogador 2 (O)</h3>
+         <input type="text" placeholder="Coloque o seu nome aqui" name="nome" id="j2" required>
+      </div>
+      <br>
+      <input type="submit" name="nome" id="send" onclick="recuperarNomes()">
+    </div>
+
+   <div class="capa" id="capa"></div>
+   
+  <div class="space" id="table">
+
+       
+   <div class="placar" id="placar">
+      <div class="player-j">
+         <h3 id="nome-j1">Jogador 1 (X)</h3>
+         <h3 id="placar-j1">0</h3> 
+      </div>
+      <div class="player2-j">
+         <h3 id="nome-j2">Jogador 2 (O)</h3>
+         <h3 id="placar-j2">0</h3> 
+      </div>
+      <br>
+    </div>
+
+    <div class="line">
+       <div class="square" id="1">
+       </div>
+      <div class="square" id="2">
+      </div>
+      <div class="square" id="3">
+      </div>
+    </div>
+
+    <div class="line">
+       <div class="square" id="4">
+       </div>
+      <div class="square" id="5">
+      </div>
+      <div class="square" id="6">
+      </div>
+    </div>
+
+    <div class="line">
+       <div class="square" id="7">
+       </div>
+      <div class="square" id="8">
+      </div>
+      <div class="square" id="9">
+      </div>
+
+    </div>
+    <br><br>
+    <div class="btns"><button id="novaRodada" onclick="resetar(0)" type="reset">Nova Rodada</button></div><br>
+    
+  </div>
+
+  <script src="./rules.js"></script>
+  <script src="./interface.js"></script> 
+  
+</body>
+
+</html>

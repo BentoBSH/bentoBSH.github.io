@@ -1,0 +1,59 @@
+@media(max-width: 700px){
+
+    body{
+        .box1{
+            height: 50vh;
+            width:100;
+        }
+        .banner{
+            height: 50vh;
+            box-shadow: 0px 15px 40px 0px rgba(8, 8, 8, 0.596);
+        }
+        .banner-conteudo{
+            width: 100%;
+        }
+    
+        .banner h1{
+            margin-bottom: 20px;
+        }
+        .banner p{
+            margin-top: 10px;
+        }
+
+        .habilidades{
+            display: grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto auto;
+            margin-top: -25px; 
+            width: 100%;
+            align-items: center;
+            
+        }
+        .criacao{
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+        .desenvolvimento{
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+        .linha2{
+            display: none;
+        }
+        .linha1{
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto auto;
+        }
+        .portfolio a{
+            color: #5e3201;
+        }
+    }
+
+    footer{
+        p{
+            margin: 5px;
+        }
+    }
+};

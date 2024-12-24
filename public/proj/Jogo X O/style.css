@@ -1,0 +1,117 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+body{
+    text-align: center;
+    background:linear-gradient(45deg, rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.308)), url(./xadrez.jpg); /* https://www.infoescola.com/wp-content/uploads/2008/03/xadrez_255260497.jpg*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.nomes{
+ width: 80%;
+ border-radius: 10px;
+ background-color: rgba(131, 130, 130, 0.158);
+ text-align: center;
+justify-self: center;
+margin-bottom: 20px;
+}
+
+#placar{
+}
+.player-j {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.player2-j {
+    margin-left: 20px;
+    display: inline-block;
+}
+.vencedor{
+    min-width: 320px;
+    line-height: 40px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: rgba(131, 130, 130, 0.233);
+    text-align: center;
+   justify-self: center;
+   margin-bottom: 20px;
+   }
+#send{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(197, 11, 11);
+}
+.capa{
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    background-image: url(./jogoXO.png);
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.player {
+    display: inline-block;
+}
+.player2 {
+    display: inline-block;
+}
+
+.space{
+    display: inline-block;
+    background-color: rgba(131, 130, 130, 0.158);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+}
+#table{
+    display: none;
+}
+.square{
+    position: relative;;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+.x{
+}
+
+.x:after{
+    content: '\274C';
+    font-size: 40px;
+    position: absolute;
+    line-height: 100px;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+  
+.o{
+}
+
+.o:after{
+    content: '\1F1F4';
+    font-size: 60px;
+    position: absolute;
+    line-height: 100px;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+#novaRodada{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(153, 152, 152, 0.103);
+    color: #d10e0e;
+}

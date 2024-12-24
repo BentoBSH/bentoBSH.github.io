@@ -1,0 +1,98 @@
+
+header {
+    display: flex;
+    position: sticky;
+    width:100%;
+    top: 0;
+    background-color: #1f1e1ede;
+    color: white;
+    box-shadow: 7px 10px 10px -5px rgba(0, 0, 0, 0.377);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+    #logo{
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 5px;
+    }
+    #nomeHeader{
+        display: inline-block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    img {
+        display: inline-block;
+        width: 50px;
+        margin-right: 15px;
+    }
+    #menu{
+     /*   margin-right: 40px; */
+    }
+    ul {
+        display: inline-flex;
+        margin-top: 10%;
+        line-height: 100%;
+    }
+    li {
+        margin-left: 25px;
+        list-style-type: none;
+        a{
+            text-decoration:none;
+            color: #fff;
+        }
+        a:houver {
+            border-bottom: #fff;
+            color: #fcff4a;
+        }
+    }
+}
+
+
+
+body{
+    background-image: url(./churrasco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120vh;
+}
+.main-div{
+
+}
+.main-div{
+    max-width: 360px;
+    height: 350px;
+    background-color: #1f1e1ede;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    input{
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    button{
+        width: 80px;
+        height: 30px;
+        border-radius: 4px;
+    }
+    margin-top: 10vh;
+}
+.resultado{
+    text-align: left;
+    padding-left: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media(max-width: 750px){
+#nomeBSH{
+    display: none;
+}
+}
