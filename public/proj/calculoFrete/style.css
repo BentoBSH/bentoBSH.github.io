@@ -1,0 +1,50 @@
+body{
+    /*background-image: url(./dinheiro-digital.png);*/
+    background-color: aliceblue;
+    background:linear-gradient(45deg, rgba(1, 230, 247, 0.644), rgba(250, 117, 117, 0.808)), url(./dinheiro-digital.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Lucida Sans', sans-serif;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 20px;
+    input{
+        width: 100%;
+        border-radius: 5px;
+        height: 15px;
+        padding: 5px;
+    }
+}
+#btn-calc{
+    height: 35px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.div-calcular{
+    justify-self: center;
+    margin-top: 20px;
+}
+
+.div-resultado{
+    height: 100%;
+    width: 80%;
+    color: #ffffff;
+    justify-self: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #dadada7a;
+    border-radius: 10%;
+}
+
+.display-none{
+    display: none;
+}
