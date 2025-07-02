@@ -2,6 +2,7 @@
 let btn = document.getElementById('btn-calc');
 let cambio = document.querySelector('#cambio');
 let preco = document.querySelector('#preco');
+let frete = document.querySelector('#frete');
 let divResultado = document.querySelector('.div-resultado')
 
 
@@ -35,10 +36,11 @@ function calcular(){
     let comissaoStripeEUR = Number(preco.value) * 1.75/100; 
     pagar_no_link = Number(preco.value) + comissaoStripeEUR; 
 
+    freteEur = Number(frete.value);
 
     margem_de_erro =  colocar_no_visa * 1/100;
 
-    total_gasto_em_kz = colocar_no_visa - margem_de_erro + (colocar_no_visa * 2.287/100);
+    total_gasto_em_kz = colocar_no_visa - margem_de_erro + (colocar_no_visa * 2.287/100) + (freteEur*cambio.value);
 
     divResultado.classList.remove('display-none')
 
