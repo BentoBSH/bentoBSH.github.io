@@ -21,26 +21,31 @@ let comissao_recebimento = 1.75%;
 let margem_de_erro = 1%;
 */
 
+function calcularComissao(valor, percentual_comissao){
+  return valor*percentual_comissao/100
+}
+
 
 function calcular(){
     let produtoEmKz = Number(preco.value) * Number(cambio.value); 
 
     preco_no_cambio_de_hj = produtoEmKz;
 
-    let comissaoBAI = produtoEmKz * 3.47/100; // comissão BAI
+    let comissaoBAI = calcularComissao(produtoEmKz,3.47) // comissão BAI
+    let comissaoStripe = calcularComissao(produtoEmKz, 1.75) // comissão stripe 
+    let comissaoStripeEUR = calcularComissao(Number(preco.value), 1.75);
 
-    let comissaoStripe = produtoEmKz * 1.75/100 // comissão stripe 
-
-    colocar_no_visa = produtoEmKz + comissaoBAI + comissaoStripe + ((produtoEmKz + comissaoBAI + comissaoStripe) * 1/100);
-
-    let comissaoStripeEUR = Number(preco.value) * 1.75/100; 
     pagar_no_link = Number(preco.value) + comissaoStripeEUR; 
 
-    freteEur = Number(frete.value);
+    let freteEur = Number(frete.value);
+
+    let comissaoBaiFrete = calcularComissao((freteEur*cambio.value), 3.47);
+
+    colocar_no_visa = produtoEmKz + comissaoBAI + comissaoStripe + ((produtoEmKz + comissaoBAI + comissaoStripe) * 1/100) + (freteEur*cambio.value) + comissaoBaiFrete;
 
     margem_de_erro =  colocar_no_visa * 1/100;
 
-    total_gasto_em_kz = colocar_no_visa - margem_de_erro + (colocar_no_visa * 2.287/100) + (freteEur*cambio.value);
+    total_gasto_em_kz = colocar_no_visa - margem_de_erro + (colocar_no_visa * 2.287/100) 
 
     divResultado.classList.remove('display-none')
 
