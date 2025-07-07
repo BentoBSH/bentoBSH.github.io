@@ -32,8 +32,8 @@ function calcular(){
     preco_no_cambio_de_hj = produtoEmKz;
 
     let comissaoBAI = calcularComissao(produtoEmKz,3.47) // comissão BAI
-    let comissaoStripe = calcularComissao(produtoEmKz, 1.75) // comissão stripe 
-    let comissaoStripeEUR = calcularComissao(Number(preco.value), 1.75);
+    let comissaoStripe = calcularComissao(produtoEmKz, 3.5) // comissão stripe 
+    let comissaoStripeEUR = calcularComissao(Number(preco.value), 3.5);
 
     pagar_no_link = Number(preco.value) + comissaoStripeEUR; 
 
